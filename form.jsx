@@ -1,5 +1,5 @@
 var ReactInput = React.createClass({
-	getInitialState() {
+	getInitialState: function () {
 		return {value: this.props.value};
 	},
 	handleChange: function (event) {
@@ -130,7 +130,7 @@ var ReactForm = React.createClass({
 			<div className="form">
 				{inputs_content}
 				<button className="btn btn-lg btn-success" onClick={this.sendForm}>Submit</button>
-				&nbsp;
+			&nbsp;
 				<button className="btn btn-lg btn-danger" onClick={this.clearForm}>Reset</button>
 			</div>
 		);
